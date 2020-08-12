@@ -1,26 +1,51 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react';
 
-function App() {
+// Styles
+import "./styles.css";
+
+// Components
+import CodeEditor from "./components/CodeEditor";
+
+export default function App() {
+  const [editorLanguage, setEditorLanguage] = useState("javascript");
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>React code syntax hightlighter</h1>
+
+      <fieldset>
+        <legend>Choose language:</legend>
+        <input
+          type="radio"
+          id="javascript"
+          name="language"
+          value="javascript"
+          checked={editorLanguage === "javascript"}
+          onChange={() => setEditorLanguage("javascript")}
+        />
+        <label htmlFor="javascript">JavaScript</label>
+        <input
+          type="radio"
+          id="xml"
+          name="language"
+          value="markup"
+          checked={editorLanguage === "markup"}
+          onChange={() => setEditorLanguage("markup")}
+        />
+        <label htmlFor="xml">XML</label>
+        <input
+          type="radio"
+          id="css"
+          name="language"
+          value="css"
+          checked={editorLanguage === "css"}
+          onChange={() => setEditorLanguage("css")}
+        />
+        <label htmlFor="css">CSS</label>
+      </fieldset>
+
+      <CodeEditor language={editorLanguage} />
     </div>
   );
 }
-
-export default App;
