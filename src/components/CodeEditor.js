@@ -1,25 +1,23 @@
 import React, { useState, useEffect } from "react";
 import Prism from "prismjs";
+// import "../styles/prism.css"
 
 
 const CodeEditor = props => {
   const [content, setContent] = useState(props.content);
 
-  const handleKeyDown = evt => {
-    let value = content,
-      selStartPos = evt.currentTarget.selectionStart;
+  const handleKeyDown = e => {
+    let value = content, selStartPos = e.currentTarget.selectionStart;
 
-    console.log(evt.currentTarget);
+    console.log(e.currentTarget);
 
     // handle 4-space indent on
-    if (evt.key === "Tab") {
-      value =
-        value.substring(0, selStartPos) +
-        "    " +
-        value.substring(selStartPos, value.length);
-      evt.currentTarget.selectionStart = selStartPos + 3;
-      evt.currentTarget.selectionEnd = selStartPos + 4;
-      evt.preventDefault();
+    if (e.key === "Tab") {
+      value = value.substring(0, selStartPos) + "    " +
+      value.substring(selStartPos, value.length);
+      e.currentTarget.selectionStart = selStartPos + 3;
+      e.currentTarget.selectionEnd = selStartPos + 4;
+      e.preventDefault();
 
       setContent(value);
     }
@@ -35,15 +33,18 @@ const CodeEditor = props => {
 
   return (
     <div className="code-edit-container">
+       
       <textarea
         className="code-input"
         value={content}
-        onChange={evt => setContent(evt.target.value)}
-        onKeyDown={handleKeyDown}
-      />
+        onChange={e => setContent(e.target.value)}
+        onKeyDown={handleKeyDown} >
+          
+      </textarea>
       <pre className="code-output">
-        <code className={`language-${props.language}`}>{content}</code>
-      </pre>
+            <code className={`language-${props.language}`}>{content}</code>
+          </pre>
+     
     </div>
   );
 };

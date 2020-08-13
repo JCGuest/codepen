@@ -1,10 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-
-// Styles
-import "./styles.css";
-
-// Components
+import "./styles/App.css";
 import CodeEditor from "./components/CodeEditor";
 
 export default function App() {
