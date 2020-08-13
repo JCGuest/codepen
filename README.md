@@ -1,68 +1,48 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# React Prism Editor
 
-## Available Scripts
 
-In the project directory, you can run:
+> A dead simple code editor with syntax highlighting and line numbers. 3kb/z
 
-### `npm start`
+![prism-editor](https://user-images.githubusercontent.com/342666/89706560-82f65380-d96f-11ea-94f9-e0fbf3220047.gif)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Demo
 
-### `npm test`
+[dislplay link to github pages](url of page)
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Features
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Code Editing
+- Modular syntax highlighting with third party library (not limited to prismjs)
+- Indent line or selected text by pressing tab key, with customizable indentation
+- Automatic indent on new lines
+- Wrap selected text in parens, brackets, or quotes
+- Undo / Redo whole words instead of letter by letter
+- Accessible, use Ctrl+Shift+M (Mac) / Ctrl+M to toggle capturing tab key
+- Works on mobile (thanks to textarea)
+- Auto resize
+- Line numbers
+- Match line numbers styles to the theme(optional)
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## Use Case
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+ This project of mine aims to provide a simple code editor with syntax highlighting support without any of the extra features, perfect for simple embeds and forms where users can submit code.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## License
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+MIT
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+[build-badge]: https://img.shields.io/circleci/project/github/koca/vue-prism-editor/master.svg?style=flat-square
+[build]: https://circleci.com/gh/koca/vue-prism-editor
+[downloads-badge]: https://img.shields.io/npm/dt/vue-prism-editor.svg?style=flat-square
+[downloads]: https://npmjs.com/package/vue-prism-editor
+[build-badge]: https://img.shields.io/npm/dm/vue-client-only.svg?style=flat
+[license-badge]: https://img.shields.io/npm/l/vue-prism-editor.svg?style=flat-square
+[license]: https://opensource.org/licenses/MIT
+[version-badge]: https://img.shields.io/npm/v/vue-prism-editor.svg?style=flat-square
+[package]: https://www.npmjs.com/package/vue-prism-editor
+[bundle-size-badge]: https://img.shields.io/bundlephobia/minzip/vue-prism-editor@1.x.x.svg?style=flat-square
+[bundle-size]: https://bundlephobia.com/result?p=vue-prism-editor
+[covarage-badge]: https://img.shields.io/codecov/c/github/koca/vue-prism-editor?style=flat-square

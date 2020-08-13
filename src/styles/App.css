@@ -1,3 +1,5 @@
+/* prism.css download from Prism.com >> */
+
 code[class*="language-"],
 pre[class*="language-"] {
 	color: #f8f8f2;
@@ -117,9 +119,7 @@ pre[class*="language-"] {
 }
 
 
-/** ---------------------------- */
-/** --- Code editor ------------ */
-/** ---------------------------- */
+/** Code editor >> */
 .code-edit-container {
   position: relative;
   height: 500px;
@@ -151,6 +151,7 @@ pre[class*="language-"] {
   margin: 0;
   color: hsl(0, 0%, 40%);
   resize: none;
+  background-color: black;
 }
 
 .code-output {
@@ -177,8 +178,4 @@ code {
 .code-edit-container pre[class*="language-"] {
   background: transparent;
   margin: 0;
-}
-
-textarea {
-  b
 }
