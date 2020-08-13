@@ -39,11 +39,10 @@ const CodeEditor = props => {
         value={content}
         onChange={e => setContent(e.target.value)}
         onKeyDown={handleKeyDown} >
-          
       </textarea>
       <pre className="code-output">
-            <code className={`language-${props.language}`}>{content}</code>
-          </pre>
+          <code className={`language-${props.language}`}>{content}</code>
+      </pre>
      
     </div>
   );

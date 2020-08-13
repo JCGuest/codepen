@@ -8,7 +8,7 @@ export default function App() {
 
   return (
     <div className="App">
-      <h1>React code syntax hightlighter</h1>
+      <h1>React Code Editor</h1>
 
       <fieldset>
         <legend>Choose language:</legend>
