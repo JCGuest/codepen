@@ -1,7 +1,8 @@
 # React Prism Editor
 
-A dead simple code editor with syntax highlighting and line numbers. 
+> A dead simple code editor with syntax highlighting and line numbers. 
 
+![React Code Editor](./react-code.png)
 
 ## Demo
 
