@@ -4,10 +4,6 @@
 
 ![React Code Editor](./react-code.png)
 
-## Demo
-
-[dislplay link to github pages](url of page)
-
 
 ## Features
 
